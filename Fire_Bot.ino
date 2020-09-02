@@ -62,7 +62,7 @@ void put_off_fire()
 
 void loop()
 {
-  Serial.println("acddddsdsd");//demo test
+ 
   digitalWrite(pump, HIGH);
   digitalWrite(11, HIGH);
   digitalWrite(12, HIGH);
@@ -89,7 +89,7 @@ void loop()
     fire = true;
   }
 
-  else if (digitalRead(Left_S) == 0) //agun bam dike
+  else if (digitalRead(Left_S) == 0) 
   {
     //Move the robot left
     digitalWrite(LM1, HIGH);
@@ -98,7 +98,7 @@ void loop()
     digitalWrite(RM2, HIGH);
   }
 
-  else if (digitalRead(Right_S) == 0) //agun dan dike
+  else if (digitalRead(Right_S) == 0) 
   {
     //Move the robot right
     digitalWrite(LM1, LOW);
@@ -113,7 +113,7 @@ void loop()
   while (fire == true)
   {
     put_off_fire();
-    Serial.println("agun agun agun !!!!!");
+    Serial.println("Fire!");
    
   }
 }
