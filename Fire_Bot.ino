@@ -68,7 +68,7 @@ void loop()
   digitalWrite(12, HIGH);
   myservo.write(90); //Sweep_Servo();
 
-  if (digitalRead(Left_S) == 1 && digitalRead(Right_S) == 1 && digitalRead(Forward_S) == 1) //agun nai , sensor er value 0
+  if (digitalRead(Left_S) == 1 && digitalRead(Right_S) == 1 && digitalRead(Forward_S) == 1) 
   {
     //Do not move the robot
     digitalWrite(LM1, HIGH);
@@ -77,7 +77,7 @@ void loop()
     digitalWrite(RM2, HIGH);
   }
 
-  else if (digitalRead(Forward_S) == 0) //agun shamne
+  else if (digitalRead(Forward_S) == 0) 
   {
     //Move the robot forward
     digitalWrite(LM1, LOW);
